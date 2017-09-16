@@ -1,0 +1,71 @@
+#welcome {
+	font-family: 'Meie Script', cursive;
+	text-align: center;
+}
+
+#logo {
+	display: block;
+	margin: auto;
+	width: 90%;
+
+}
+
+#select-container {
+	margin: auto;
+	display: block;
+	margin-top: 200px;
+}
+
+.select {
+	width: 30%;
+	margin-left: 160px; /*NEED BETTER WAY TO CENTER*/
+}
+
+.knight-img {
+	border: 2px solid black;
+	height: 250px;
+	width: 250px;
+	margin-right: 25px;
+}
+
+.alien-img {
+	border: 2px solid black;
+	height: 250px;
+	width: 250px;
+	margin-right: 25px;
+}
+
+#uno-img,
+#venom-img {
+	-moz-transform: scaleX(-1);
+   -o-transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+   filter: FlipH;
+   -ms-filter: "FlipH";
+}
+
+.knight-img:hover {
+	border: 5px solid #3fdcfc;
+	text-shadow: 10 10 13px #FF0000, 10 10 15px #0000FF;
+	/* -webkit-filter: invert(1);
+	filter: invert(1); */
+}
+
+.alien-img:hover {
+	border: 5px solid #00ff19;
+	/* -webkit-filter: invert(1);
+	filter: invert(1); */
+}
+
+#w-txt {
+	display: none;
+}
+
+.img-container {
+	margin: 0 auto;
+}
+
+.jumbotron {
+	text-align: center;
+}
