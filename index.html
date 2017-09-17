@@ -9,13 +9,37 @@
 </head>
 <body>
 	<div class="wrapper">
-		<h1 id="welcome">Welcome To...</h1>
-		<img id="logo" src="assets/images/logo.png">
+		<!-- Title -->
+		<div id=#title-container>
+			<h1 id="welcome">Welcome To...</h1>
+			<img id="logo" src="assets/images/logo.png">
+		</div>
+		
+		<div id="character-container">
+			<div id="knights-container">
+				<h3 id="enemy-prompt-knights">Select Your Next Meal</h3>
+				<img id="white-knight-img" class="knight-img" src="assets/images/white-knight.gif">
+				<img id="red-knight-img" class="knight-img" src="assets/images/red-knight.gif">
+				<img id="dragoon-img" class="knight-img" src="assets/images/dragoon.gif">
+			</div>
+			<div id="aliens-container">
+				<img id="uno-img" class="alien-img" src="assets/images/uno.gif">
+				<img id="chompy-img" class="alien-img" src="assets/images/chompy.gif">
+				<img id="venom-img" class="alien-img" src="assets/images/venom.gif">
+				<h3 id="enemy-prompt">Select Your Alien Opponent</h3>
+			</div>
+		</div>
 
-		<h1 id="welcome">Pledge Your Allegiance</h1>
+		<!-- Faction Selection -->
+
 			<div id="select-container" class="row">
-				<a href="knights.html"><img class="col-md-6 select" src="assets/images/knights-select.png"></a>
-				<a href="aliens.html"><img class="col-md-6 select" src="assets/images/aliens-select.png"></a>
+				<h1 id="welcome">Pledge Your Allegiance</h1>
+				<img class="col-md-6 select choose-knights" src="assets/images/knights-select.png"></a>
+				<img class="col-md-6 select choose-aliens" src="assets/images/aliens-select.png"></a>
+			</div>
+
+			<div id="back-to-title">
+				<button type="button" class="btn btn-danger">Back to Title</button>
 			</div>
 
 		
@@ -25,11 +49,11 @@
 
 
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/javascript/script.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-</html>
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+	</html>

@@ -10,10 +10,38 @@
 
 }
 
+#character-container {
+	position: relative;
+	margin: 0 auto;
+	width: 60%;
+	
+}
+
+#knights-container {
+	position: absolute;
+	display: none;
+}
+
+#aliens-container {
+	position: absolute;
+	display: none;
+}
+
 #select-container {
 	margin: auto;
 	display: block;
 	margin-top: 200px;
+}
+
+#enemy-prompt,
+#enemy-prompt-knights {
+	display: none;
+	font-family: 'Meie Script', cursive;
+	text-align: center;
+}
+
+#back-to-title {
+	display: none;
 }
 
 .select {

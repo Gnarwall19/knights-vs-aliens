@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+characterImages = ["../images/white-knight.gif", "../images/red-knight.gif", "../images/dragoon.gif", "../images/chompy.gif", "../images/uno.gif", "../images/venom.gif"]
+
 	var choosenCharacter;
 	var choosenEnemy;
 	var playerPicked = false;
