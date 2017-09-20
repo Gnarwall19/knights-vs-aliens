@@ -8,9 +8,9 @@ var characters = {
 		name: "White Knight",
 		divid: "#white-knight-img",
 		hp: 120,
-		attack: 15,
+		attack: random(13, 17),
 		dodge: 12,
-		counter: 15,
+		counter: random(13, 17),
 		ultimate: 12,
 	},
 
@@ -18,9 +18,9 @@ var characters = {
 		name: "Red Knight",
 		divid: "#red-knight-img",
 		hp: 100,
-		attack: 18,
+		attack: random(14, 19),
 		dodge: 12,
-		counter: 18,
+		counter: random(14, 19),
 		ultimate: 12,
 	},
 
@@ -28,9 +28,9 @@ var characters = {
 		name: "Dragoon",
 		divid: "#dragoon-img",
 		hp: 80,
-		attack: 20,
+		attack: random(18, 21),
 		dodge: 12,
-		counter: 20,
+		counter: random(18, 21),
 		ultimate: 12,
 	},
 
@@ -38,9 +38,9 @@ var characters = {
 		name: "Chompy",
 		divid: "#chompy-img",
 		hp: 75,
-		attack: 22,
+		attack: random(19, 22),
 		dodge: 12,
-		counter: 22,
+		counter: random(19, 22),
 		ultimate: 12,
 	},
 
@@ -48,9 +48,9 @@ var characters = {
 		name: "Uno",
 		divid: "#uno-img",
 		hp: 90,
-		attack: 20,
+		attack: random(18, 20),
 		dodge: 12,
-		counter: 20,
+		counter: random(18, 20),
 		ultimate: 12,
 	},
 
@@ -58,9 +58,9 @@ var characters = {
 		name: "Venom",
 		divid: "#venom-img",
 		hp: 125,
-		attack: 13,
+		attack: random(12, 14),
 		dodge: 12,
-		counter: 13,
+		counter: random(12, 14),
 		ultimate: 12,
 	},
 }
@@ -77,6 +77,11 @@ var stats = {
 
 		enemyPicked: false,
 	}
+
+//Random number generator
+function random(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 //Assigns players character stats
 function playerChar(char) {
@@ -267,7 +272,7 @@ $("#venom-img").on("click", function() {
 	$(this).animate({"margin-top":"-200px"}, "slow");
 	$(this).css("margin-left", "700px");
 	$("#knights-container").delay(2000).fadeIn();
-
+2
 	//Assign characters and stats
 	if (stats.selectCounter === 0) {
 		playerChar(characters.venom);
